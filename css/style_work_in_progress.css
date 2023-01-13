@@ -1,0 +1,14 @@
+img {
+    height: 80%;
+}
+p{
+    text-align: center;
+}
+div{
+    background-color: inherit;
+    text-align: center;
+    overflow:hidden;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+}

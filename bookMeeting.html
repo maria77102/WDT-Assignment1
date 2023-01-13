@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+
+</style>
+<body><center>
+    <div class="profileInfo">
+        <div class="bookingPicture">
+            <img src="images/profilePic.jpg" class="profilePicture">
+        </div>
+        <div class="mentorInfo">
+            <h1>Mark</h1>
+            <h2>Bio:</h2>
+            <p>Hi! My name is Mark and I am a mentor on this website!<br>I hope
+            I can help you with whatever problems you have! Please book a meeting!</p>
+        </div>
+        <br><br><br>
+        <div>
+            <form>
+                <table class="timeslotTable">
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2">Tuesday</td>
+                        <td><input type="radio" name="timeslot" value="1">
+                            <label for="css">10:00 - 12:00</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="timeslot" value="2">
+                            <label for="css">16:00 - 18:00</label><br></td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td><input type="radio" name="timeslot" value="3">
+                            <label for="css">13:00 - 15:00</label><br></td>
+                    </tr>
+                    
+
+                </table>
+                
+                <h3>What can I help you with?</h3>
+                <textarea name="message" rows="4" cols="20" required minlength="10"></textarea> 
+                <br><br>
+                <button onclick="alert('The meeting request has been submited.')"><a href="SearchPage.html">Submit</button></a></button><br><br>  
+                
+                <!--<p>Changed your mind?</p>
+                <p><u><a href="SearchPage.html">Go back</a></u></p>-->
+            </form>
+       
+        </div>
+        
+        
+    </div>
+</center>
+</body>
+</html>
