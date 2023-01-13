@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="css/stylesheet.css">
+            <title>Update Profile Pic</title>
+            <script>
+                //This doesn't seem to update the picture even though it switches the src value
+                getImageFilePath = () => {
+                    var x = document.getElementById("upload-image").value;
+                    console.log(x);
+                    var y = document.getElementsByName("profile-pic");
+                    y.forEach(element => {
+                        element.setAttribute("src", x);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <img name="profile-pic" class="profile" src="images/profilePicture.jpg">
+            
+            <div class="profile">
+                <br>
+                <input type="file" id="upload-image" accept="image/jpeg, image/png, image/jpg" oninput="getImageFilePath();">
+                <output></output><br><br>
+                <a href="profile1.html"><input type="button" class="button" value="SAVE" onclick="alert('✅ Your new profile picture has been saved.')"></a>
+            </div>
+        </body>
+    </html>

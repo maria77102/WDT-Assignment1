@@ -23,6 +23,20 @@ legend{
     margin-left:60%
 }
 
+.profile{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.profile + div {
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+}
+
 .button{
     background-color:blue; 
     border-color: blue;
@@ -34,6 +48,10 @@ legend{
 
 .button:hover{
     background-color: rgb(4, 4, 116);
+}
+
+.changeinfo{
+    margin-left: 75%;
 }
 
 .time{
